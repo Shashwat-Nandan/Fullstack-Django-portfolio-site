@@ -1,0 +1,127 @@
+body{
+  position: absolute;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+
+.header{
+  position:fixed;
+  top: 0;
+  width: 100vw;
+  height: 3rem;
+  background-color: rebeccapurple;
+  margin-bottom: 1rem;
+}
+
+
+.nav-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba();
+}
+
+.nav-item{
+  color: white;
+  text-transform: uppercase;
+}
+
+.container{
+  top: 1rem;
+  margin-top: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.cover {
+  width: 100vw;
+  height: 250px;
+
+}
+
+.title{
+  color: gold;
+  z-index: 2;
+  position: absolute;
+  top: 2rem;
+  left: 10rem;
+  text-align: center;
+  animation-name: movefromright;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.subtitle{
+  color: green;
+  z-index: 2;
+  position: absolute;
+  top: 4.5rem;
+  left: 10rem;
+  text-align: center;
+  animation: movefrombottom 1s ease-out;
+}
+
+.portfolio{
+  top: auto;
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr ));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1.5rem;
+  grid-auto-flow: row;
+}
+
+.cakes {
+  color: #fff456;
+  padding: 0.5rem;
+  width: 100%;
+  height: 10rem;
+  border: 1px solid grey;
+  margin: 1rem;
+  border-radius: 10px;
+
+
+}
+
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: 4rem;
+  background-color: hotpink;
+  text-align: center;
+}
+
+.copyright{
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+@keyframes movefromright {
+  0% {
+    opacity: 0;
+    transform: translateX(-4rem);
+  },
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes movefrombottom {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  },
+  100% {
+    opacity: 1;
+  }
+
+}

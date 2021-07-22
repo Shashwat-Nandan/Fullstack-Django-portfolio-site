@@ -1,0 +1,10 @@
+.env
+.lock
+.git
+/migrations
+
+
+# Python
+*.pyc
+*~
+__pycache__
